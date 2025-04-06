@@ -1,0 +1,5 @@
+# Microsoft Wireless Mouse
+SUBSYSTEMS=="input", ATTRS{name}=="Microsoft Microsoft® Nano Transceiver v1.0 Mouse", ACTION=="remove", RUN+="/bin/su dergachev -c /home/dergachev/dev/mtoff/mouse-off.sh"
+SUBSYSTEMS=="input", ATTRS{name}=="Microsoft Microsoft® Nano Transceiver v1.0 Mouse", ACTION=="add", RUN+="/bin/su dergachev -c /home/dergachev/dev/mtoff/mouse-on.sh"
+#SUBSYSTEMS=="input", ATTRS{ID_VENDOR_ID}=="045e", ATTRS{ID_USB_MODEL_ID}=="07b2", ACTION=="remove", RUN+="/bin/su dergachev -c /home/dergachev/dev/mtoff/mouse-off.sh"
+#SUBSYSTEMS=="input", ATTRS{ID_VENDOR_ID}=="045e", ATTRS{ID_USB_MODEL_ID}=="07b2", ACTION=="add", RUN+="/bin/su dergachev -c /home/dergachev/dev/mtoff/mouse-on.sh"
